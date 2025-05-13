@@ -9,7 +9,10 @@ const database: any = {
 const app = express();
 const PORT = Number(process.env.PORT) || 4001;
 
-app.use(cors());
+app.use(cors({
+    credentials: true,
+    origin: 'http://5.35.28.88:5173'
+}));
 app.use(express.json());
 
 // ---------------------------------
