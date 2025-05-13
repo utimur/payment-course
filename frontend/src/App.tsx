@@ -1,7 +1,7 @@
 function App() {
 
     const onClick = () => {
-        fetch('http://5.35.28.88:4001/', {
+        fetch('http://5.35.28.88:4001/api/payment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
