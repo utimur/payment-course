@@ -7,7 +7,7 @@ const database: any = {
 }
 
 const app = express();
-const PORT = process.env.PORT || 4001;
+const PORT = Number(process.env.PORT) || 4001;
 
 app.use(cors());
 app.use(express.json());
@@ -60,6 +60,6 @@ app.post('/api/payment/notifications', async (req: Request, res: Response) => {
     res.json({status: "OK"})
 })
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0' ,() => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
