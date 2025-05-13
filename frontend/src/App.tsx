@@ -1,7 +1,7 @@
 function App() {
 
     const onClick = () => {
-        fetch('https://ravishingly-potential-hornbill.cloudpub.ru/api/payment', {
+        fetch('http://5.35.28.88:4001/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
